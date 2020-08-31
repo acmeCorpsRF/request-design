@@ -1,0 +1,11 @@
+.header__link-mail {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  @media (max-width: 1310px) and (min-width: 1080px) {
+    max-width: 22px;
+    overflow: hidden;
+  }
+}

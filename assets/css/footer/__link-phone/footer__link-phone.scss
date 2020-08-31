@@ -1,0 +1,15 @@
+.footer__link-phone {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (max-width: 895px) {
+    display: inline-block;
+  }
+
+  &:hover {
+    color: #00aa4b;
+  }
+}

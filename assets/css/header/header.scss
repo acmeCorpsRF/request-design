@@ -1,0 +1,45 @@
+@import 'navigation/navigation.scss';
+@import '__menu-navigation/header__menu-navigation';
+@import 'navigation/information-list/information-list.scss';
+@import '__information-list/header__information-list.scss';
+@import '__list-item/header__list-item.scss';
+@import '__list-item-link/header__list-item-link.scss';
+@import '__contacts/header__contacts.scss';
+@import '__link-mail/header__link-mail.scss';
+@import '__link-mail-img/header__link-mail-img.scss';
+@import '__link-phone/header__link-phone.scss';
+@import '__link-phone-img/header__link-phone-img.scss';
+@import 'common/__block/toggle-menu/toggle-menu.scss';
+@import '__logo-link/header__logo-link.scss';
+@import '__logo-text/header__logo-text.scss';
+@import '__logo-subtext/header__logo-subtext.scss';
+@import '__logo-img/header__logo-img.scss';
+@import '__logo-domain/header__logo-domain.scss';
+@import '__toggle-menu/header__toggle-menu.scss';
+@import '__search-filter/header__search-filter.scss';
+@import '__search-form/header__search-form.scss';
+@import '__phone/header__phone.scss';
+@import '__phone-img/header__phone-img.scss';
+@import 'common/__block/selection-categories/selection-categories.scss';
+@import 'common/common.scss';
+@import 'common/__block/search-form/search-form.scss';
+@import 'common/__block/supplier-portal-link/supplier-portal-link.scss';
+@import '__supplier-portal-img/header__supplier-portal-img.scss';
+@import '__supplier-portal-link/header__supplier-portal-link.scss';
+@import 'basket/basket.scss';
+@import '__basket/header__basket.scss';
+@import '__title-column/header__title-column.scss';
+@import 'categories/categories.scss';
+@import '__menu-categories/header__menu-categories.scss';
+@import '__categories-list/header__categories-list.scss';
+@import '__categories-item/header__categories-item.scss';
+@import '__categories-link/header__categories-link.scss';
+@import '__categories-img/header__categories-img.scss';
+@import '__categories-button-next/header__categories-button-next.scss';
+@import '__categories-button-prev/header__categories-button-prev.scss';
+
+.header {
+  @media (max-width: 895px) {
+    position: relative;
+  }
+}

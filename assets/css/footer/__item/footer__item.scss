@@ -1,0 +1,13 @@
+.footer__item {
+  @media (min-width: 896px) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 749px) {
+    padding: 10px;
+  }
+}

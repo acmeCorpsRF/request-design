@@ -1,0 +1,12 @@
+@import '__button-next/menu-categories__button-next.scss';
+@import '__button-prev/menu-categories__button-prev.scss';
+
+.menu-categories {
+  position: relative;
+
+  &.swiper-container-initialized {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+}

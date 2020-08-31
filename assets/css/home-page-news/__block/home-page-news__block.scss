@@ -1,0 +1,23 @@
+.home-page-news__block {
+  position: relative;
+
+  @media (min-width: 1280px) {
+    padding-top: 42px;
+    padding-right: 60px;
+    padding-left: 75px;
+  }
+
+  @media (max-width: 1279px) and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    clear: left;
+  }
+}

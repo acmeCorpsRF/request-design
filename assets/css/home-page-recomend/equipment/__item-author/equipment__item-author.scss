@@ -1,0 +1,52 @@
+.equipment__item-author {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  text-transform: uppercase;
+
+  @media (min-width: 896px) {
+    font: {
+      size: 20px;
+    }
+  }
+
+  @media (max-width: 895px) and(min-width: 750px) {
+    font: {
+      size: 30px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+  }
+
+  .equipment__item:first-child & {
+    @media (min-width: 896px) {
+      order: 1;
+    }
+
+    @media (max-width: 895px) and (min-width: 750px) {
+      display: inline-block;
+      margin-bottom: 9px;
+    }
+  }
+
+  .equipment__item:nth-child(2) & {
+    display: inline-block;
+
+    @media (max-width: 895px) and (min-width: 750px) {
+      margin-bottom: 19px;
+    }
+  }
+
+  .equipment__item:nth-child(3) & {
+    display: inline-block;
+
+    @media (max-width: 895px) and (min-width: 750px) {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+@import '_text_color_dark/equipment__item-author_text_color_dark.scss';
+@import '_text_color_light/equipment__item-author_text_color_light.scss';

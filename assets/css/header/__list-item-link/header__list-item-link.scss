@@ -1,0 +1,9 @@
+     .header__list-item-link {
+           white-space: nowrap;
+
+     @media (min-width: 896px) {
+           &:hover {
+             text-decoration: underline
+           }
+       }
+         }

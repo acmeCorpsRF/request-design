@@ -1,0 +1,15 @@
+@import '__toggle-button/selection-categories__toggle-button';
+@import '__popup/selection-categories__popup';
+@import '__popup-title/selection-categories__popup-title';
+@import '__list/selection-categories__list';
+@import '__list-item/selection-categories__list-item';
+
+.selection-categories {
+  @media (min-width: 896px) {
+    position: relative;
+  }
+
+  @media (max-width: 895px) {
+    display: none;
+  }
+}

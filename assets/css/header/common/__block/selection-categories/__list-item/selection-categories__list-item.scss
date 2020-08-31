@@ -1,0 +1,15 @@
+.selection-categories__list-item {
+  color: #343434;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+
+  &:hover {
+    color: #00aa4b;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

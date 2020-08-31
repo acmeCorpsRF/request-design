@@ -1,0 +1,14 @@
+.header__information-list {
+  list-style-type: none;
+
+  @media (min-width: 1080px) {
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+
+  @media (max-width: 1079px) and (min-width: 896px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

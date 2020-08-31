@@ -1,0 +1,18 @@
+.footer__opening-hours {
+  @media (min-width: 896px) {
+    max-width: 100px;
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    max-width: 150px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 749px) {
+    max-width: 110px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.home-page-main__target-block {
+  @media (min-width: 896px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+  }
+}

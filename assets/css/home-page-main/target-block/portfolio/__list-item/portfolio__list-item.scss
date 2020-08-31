@@ -1,0 +1,20 @@
+.portfolio__list-item {
+  background-color: #232323;
+
+  @media (min-width: 1550px) {
+    padding: 57px 65px 49px 66px;
+  }
+
+  @media (max-width: 1549px) and (min-width: 896px) {
+    padding: 25px 25px 50px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    min-height: 556px;
+    padding: 83px 31px 116px;
+  }
+  @media (max-width: 749px) {
+    min-height: 230px;
+    padding: 15px;
+  }
+}

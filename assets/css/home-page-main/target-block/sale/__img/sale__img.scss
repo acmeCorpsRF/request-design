@@ -1,0 +1,16 @@
+.sale__img {
+  @media (min-width: 896px) {
+    width: 68px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    width: 118px;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: 749px) {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+}

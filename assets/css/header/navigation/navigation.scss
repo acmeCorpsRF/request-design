@@ -1,0 +1,11 @@
+.navigation {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  @media (min-width: 896px) {
+    background-color: #00aa4b;
+  }
+}

@@ -1,0 +1,20 @@
+.home-page-about__indicators {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #777777;
+
+  @media (min-width: 896px) {
+    margin-bottom: 22px;
+    font: {
+      size: 18px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-bottom: 34px;
+    font: {
+      size: 30px;
+    }
+  }
+}

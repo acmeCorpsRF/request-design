@@ -1,0 +1,22 @@
+.header__logo-subtext {
+  display: block;
+  width: 191px;
+  font: {
+    size: 18px;
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #777777;
+
+  @media (min-width: 896px) {
+    display: none;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    display: block;
+    margin-left: 64px;
+  }
+
+  @media (max-width: 749px) {
+    display: none;
+  }
+}

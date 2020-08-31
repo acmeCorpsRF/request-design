@@ -1,0 +1,23 @@
+.portfolio__button-next {
+  top: auto !important;
+  right: 30px !important;
+
+  @media (min-width: 896px) {
+    display: none !important;
+  }
+
+  @media (min-width: 750px) {
+    bottom: 31px !important;
+  }
+
+  @media (max-width: 749px) {
+    bottom: 10px !important;
+  }
+
+  &::after {
+    font: {
+      size: 25px !important;
+    }
+    color: #ffffff;
+  }
+}

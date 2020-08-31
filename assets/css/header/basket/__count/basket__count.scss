@@ -1,0 +1,25 @@
+.basket__count {
+  position: absolute;
+  color: #ff8c00;
+
+  @media (min-width: 896px) {
+    top: -1px;
+    left: 11px;
+    font: {
+      size: 14px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    top: -7px;
+    left: 24px;
+    font: {
+      size: 25px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    top: 0;
+    left: 15px;
+  }
+}

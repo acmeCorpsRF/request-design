@@ -1,0 +1,16 @@
+.home-page-about__text {
+  max-width: 917px;
+
+  @media (min-width: 1280px) {
+    margin-right: 255px;
+    padding-left: 85px;
+  }
+
+  @media (max-width: 1279px) and (min-width: 896px) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: 895px){
+    order: 2;
+  }
+}

@@ -1,0 +1,20 @@
+.home-page-news__item-text {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #121212;
+
+  .home-page-news__last-news & {
+    @media (min-width: 1280px) {
+      max-height: 190px;
+      margin-top: 18px;
+      overflow: hidden;
+    }
+  }
+
+  .home-page-news__other-news & {
+    @media (min-width: 1280px) {
+      margin-left: 210px;
+    }
+  }
+}

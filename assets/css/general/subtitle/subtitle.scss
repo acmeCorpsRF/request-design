@@ -1,0 +1,18 @@
+.subtitle {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #787878;
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    font: {
+      size: 30px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+  }
+}
+
+@import '_text_pos_center/subtitle_text_pos_center.scss';

@@ -1,0 +1,15 @@
+.home-page-about__block {
+  display: flex;
+
+  @media (min-width: 896px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: 895px) {
+    flex-direction: column;
+  }
+}

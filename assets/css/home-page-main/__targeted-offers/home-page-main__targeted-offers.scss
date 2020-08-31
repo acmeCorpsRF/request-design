@@ -1,0 +1,12 @@
+.home-page-main__targeted-offers {
+  width: 100%;
+  max-width: 303px;
+  margin-right: 21px;
+  padding-top: 28px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+
+  @media (max-width: 1279px) {
+    display: none;
+  }
+}

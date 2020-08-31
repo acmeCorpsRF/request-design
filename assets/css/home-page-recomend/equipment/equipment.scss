@@ -1,0 +1,24 @@
+@import '__item/equipment__item.scss';
+@import '__item-img/equipment__item-img.scss';
+@import '__item-author/equipment__item-author.scss';
+@import '__item-title/equipment__item-title.scss';
+@import '__item-description/equipment__item-description';
+
+.equipment {
+  @media (min-width: 1408px) {
+    grid-template-columns: 595px auto;
+    padding-right: 68px;
+    padding-left: 92px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-rows: 420px 315px;
+  }
+
+  @media (min-width: 896px) {
+    display: grid;
+    grid-template-areas: 'first second' 'first third';
+    grid-gap: 10px;
+    padding-top: 66px;
+  }
+}

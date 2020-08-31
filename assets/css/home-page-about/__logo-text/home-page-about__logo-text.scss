@@ -1,0 +1,22 @@
+.home-page-about__logo-text {
+  color: #121212;
+  letter-spacing: -0.5px;
+
+  @media (min-width: 896px) {
+    font: {
+      size: 40px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    font: {
+      size: 50px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    font: {
+      size: 20px;
+    }
+  }
+}

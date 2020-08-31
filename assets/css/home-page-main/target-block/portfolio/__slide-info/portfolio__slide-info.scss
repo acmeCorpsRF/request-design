@@ -1,0 +1,12 @@
+.portfolio__slide-info {
+  float: left;
+
+  @media (min-width: 896px) {
+    width: 65%;
+    max-width: 427px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    max-width: 365px;
+  }
+}

@@ -1,0 +1,18 @@
+@import '../common/__block/common__block.scss';
+.common {
+  @media (min-width: 896px) {
+    background-color: #e8e7e7;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    border-bottom: 2px solid #e8e7e7;
+  }
+
+  @media (max-width: 895px) {
+    background-color: #f1f1f1;
+  }
+
+  @media (max-width: 749px) {
+    border-bottom: 1px solid #e8e7e7;
+  }
+}

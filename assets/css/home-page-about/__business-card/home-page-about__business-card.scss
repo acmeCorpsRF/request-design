@@ -1,0 +1,28 @@
+.home-page-about__business-card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1280px) {
+    position: relative;
+    top: 58px;
+  }
+
+  @media (min-width: 896px) {
+    width: 265px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    width: 470px;
+    margin-bottom: 128px;
+    padding-top: 19px;
+    padding-left: 55px;
+  }
+
+  @media (max-width: 895px) {
+    order: 1;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+  }
+}

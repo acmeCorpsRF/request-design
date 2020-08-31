@@ -1,0 +1,24 @@
+.home-page-about__company-group {
+  color: #171717;
+
+  @media (min-width: 896px) {
+    margin-top: 22px;
+    font: {
+      size: 24px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-top: 47px;
+    font: {
+      size: 40px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+    font: {
+      size: 20px;
+    }
+  }
+}

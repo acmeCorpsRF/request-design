@@ -1,0 +1,9 @@
+@import '__input/search-form__input';
+@import '__button/search-form__button';
+
+.search-form {
+  @media (min-width: 896px) {
+    position: relative;
+    width: 100%;
+  }
+}

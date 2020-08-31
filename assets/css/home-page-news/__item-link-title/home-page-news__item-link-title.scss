@@ -1,0 +1,24 @@
+.home-page-news__item-link-title {
+  font: {
+    size: 24px;
+  }
+  color: #121212;
+  text-decoration: none;
+
+  &:hover {
+    color: #00aa4b;
+  }
+
+  .home-page-news__other-news & {
+    display: block;
+
+    @media (min-width: 1280px) {
+      margin-left: 210px;
+      margin-bottom: 17px;
+    }
+
+    @media (max-width: 1279px) {
+      margin-bottom: 10px;
+    }
+  }
+}

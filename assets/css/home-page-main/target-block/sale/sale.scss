@@ -1,0 +1,24 @@
+@import '__img/sale__img.scss';
+@import '__running-title/sale__running-title.scss';
+@import '__title/sale__title.scss';
+@import '__link/sale__link.scss';
+
+.sale {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  border: 2px solid #ffaf2d;
+
+  @media (min-width: 896px) {
+    padding: 28px 28px 48px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding: 80px 60px 63px;
+  }
+
+  @media (max-width: 749px)  {
+    padding: 15px;
+  }
+}

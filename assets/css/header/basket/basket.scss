@@ -1,0 +1,9 @@
+@import '__count/basket__count.scss';
+@import '__image/basket__image.scss';
+@import '__title/basket__title.scss';
+@import '__sum/basket__sum.scss';
+
+.basket {
+  position: relative;
+  text-decoration: none;
+}

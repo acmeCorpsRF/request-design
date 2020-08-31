@@ -1,0 +1,27 @@
+.information-list__item-link {
+  text-decoration: none;
+
+  @media (min-width: 896px) {
+    color: #ffffff;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font: {
+      size: 30px;
+    }
+  }
+
+  @media (max-width: 895px) {
+    display: block;
+    font: {
+      family: 'Myriad Pro LightSemiExt', sans-serif;
+    }
+    color: #000000;
+
+    &:hover {
+      color: #00aa4b;
+    }
+  }
+}

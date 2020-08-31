@@ -1,0 +1,19 @@
+.home-page-main__targeted-offers-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 19px 11px 30px;
+  font: {
+    family: 'Myriad Pro LightSemiExt';
+  }
+  text-decoration: none;
+  color: #303030;
+
+  &:hover {
+    color: #ff8c00;
+  }
+
+  &::after {
+    content: '\3E';
+  }
+}

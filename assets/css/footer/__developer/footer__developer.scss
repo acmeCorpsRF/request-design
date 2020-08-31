@@ -1,0 +1,26 @@
+.footer__developer {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #ffffff;
+
+  @media (min-width: 896px) {
+    font: {
+      size: 18px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    display: inline-block;
+    margin-top: 20px;
+    font: {
+      size: 40px;
+    }
+    letter-spacing: 0.4px;
+  }
+
+  @media (max-width: 749px) {
+    display: block;
+    margin-top: 10px;
+  }
+}

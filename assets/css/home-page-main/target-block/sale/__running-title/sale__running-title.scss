@@ -1,0 +1,18 @@
+.sale__running-title {
+  font: {
+    family: 'Myriad Pro LightSemiExt';
+  }
+  color: #121212;
+
+  @media (min-width: 896px) {
+    font: {
+      size: 18px;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    font: {
+      size: 25px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '_hidden/selection-categories__popup_hidden';
+
+.selection-categories__popup {
+  position: absolute;
+  z-index: 11;
+  top: 100%;
+  min-width: 216px;
+  padding: 14px 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #e8e7e7;
+}

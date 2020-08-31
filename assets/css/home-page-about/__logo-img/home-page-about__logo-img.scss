@@ -1,0 +1,16 @@
+.home-page-about__logo-img {
+  @media (min-width: 896px) {
+    max-width: 151px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    max-width: 250px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 749px) {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+}

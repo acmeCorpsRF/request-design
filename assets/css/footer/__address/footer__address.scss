@@ -1,0 +1,22 @@
+.footer__address {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #ffffff;
+
+  @media (min-width: 896px) {
+    max-width: 187px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-left: 20px;
+    font: {
+      size: 20px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+}

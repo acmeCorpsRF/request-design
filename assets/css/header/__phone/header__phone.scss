@@ -1,0 +1,14 @@
+.header__phone {
+  @media (min-width: 896px) {
+    display: none;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: 749px) {
+    display: block;
+    width: 30px;
+  }
+}

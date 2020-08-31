@@ -1,0 +1,25 @@
+.header__categories-item {
+  display: block;
+
+  @media (max-width: 1549px) and (min-width: 1280px) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  @media (min-width: 896px) {
+    .header__menu-categories:not([class*="swiper-container-initialized"]) & {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 895px) {
+    &:not(:last-child) {
+      border-bottom: 1px solid #e8e7e7;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.footer__block {
+  @media (min-width: 1280px) {
+    padding: 88px 68px 74px 87px;
+  }
+
+  @media (min-width: 896px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1279px) and (min-width: 896px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-top: 46px;
+    padding-bottom: 42px;
+  }
+}

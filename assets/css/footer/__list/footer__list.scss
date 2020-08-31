@@ -1,0 +1,9 @@
+.footer__list {
+  list-style-type: none;
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-left: 20px;
+  }
+}
+
+@import '_close/footer__list_close.scss';

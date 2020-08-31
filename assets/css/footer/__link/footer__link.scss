@@ -1,0 +1,17 @@
+.footer__link {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    font: {
+      size: 20px;
+    }
+  }
+
+  &:hover {
+    color: #00aa4b;
+  }
+}

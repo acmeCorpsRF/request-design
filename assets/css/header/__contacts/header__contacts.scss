@@ -1,0 +1,9 @@
+.header__contacts {
+  float: right;
+  display: flex;
+  height: 48px;
+
+  @media (max-width: 895px) {
+    display: none;
+  }
+}

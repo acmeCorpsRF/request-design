@@ -1,0 +1,11 @@
+.categories-list__item-link {
+  display: block;
+  text-align: center;
+  color: #343434;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    color: #00aa4b;
+  }
+}

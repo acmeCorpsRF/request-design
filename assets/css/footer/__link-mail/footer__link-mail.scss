@@ -1,0 +1,15 @@
+.footer__link-mail {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    display: inline-block;
+  }
+
+  &:hover {
+    color: #00aa4b;
+  }
+}

@@ -1,0 +1,21 @@
+.selection-categories__toggle-button {
+  position: relative;
+  height: 35px;
+  padding-right: 26px;
+  padding-left: 16px;
+  background-color: #f1f1f1;
+  border-right: 1px solid #e8e7e7;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    border-top: 7px solid #393939;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transform: translateY(-50%);
+  }
+}

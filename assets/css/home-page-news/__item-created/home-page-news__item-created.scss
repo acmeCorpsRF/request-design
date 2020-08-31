@@ -1,0 +1,23 @@
+.home-page-news__item-created {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1279px) {
+    margin-bottom: 10px;
+  }
+
+  .home-page-news__last-news & {
+    @media (min-width: 1280px) {
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .home-page-news__other-news & {
+    @media (min-width: 1280px) {
+      margin-left: 210px;
+      margin-bottom: 7px;
+    }
+  }
+}

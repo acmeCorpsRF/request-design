@@ -1,0 +1,49 @@
+.equipment__item-img {
+  @media (max-width: 749px) {
+    display: none;
+  }
+
+  .equipment__item:first-child & {
+    @media (min-width: 896px) {
+      order: 2;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 895px) {
+      position: absolute;
+      top: 26px;
+      right: -32px;
+      max-width: 265px;
+    }
+  }
+
+  .equipment__item:nth-child(2) & {
+    position: absolute;
+    @media (min-width: 896px) {
+      max-width: 387px;
+      top: 7px;
+      left: -195px;
+    }
+
+    @media (max-width: 895px) {
+      top: 48px;
+      left: -152px;
+      max-width: 385px;
+    }
+
+  }
+
+  .equipment__item:nth-child(3) & {
+    position: absolute;
+    max-width: 385px;
+    @media (min-width: 896px) {
+      top: 8px;
+      right: -92px;
+    }
+
+    @media (max-width: 895px) {
+      top: 75px;
+      right: -144px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '__item/categories-list__item.scss';
+@import '__item-link/categories-list__item-link.scss';
+@import '__item-img/categories-list__item-img.scss';
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  @media (min-width: 768px) {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+}

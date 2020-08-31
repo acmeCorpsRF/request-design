@@ -1,0 +1,5 @@
+.home-page-main__targeted-offers-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+  }
+}

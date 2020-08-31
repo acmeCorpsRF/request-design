@@ -1,0 +1,11 @@
+.header__menu-categories {
+  @media (min-width: 896px) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &.swiper-container-initialized {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}

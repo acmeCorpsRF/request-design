@@ -1,0 +1,9 @@
+.footer__menu-categories {
+  @media (min-width: 896px) {
+    padding-left: 45px;
+  }
+
+  @media (max-width: 895px) {
+    border-bottom: 1px solid #4b4b4b;
+  }
+}

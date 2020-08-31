@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request Design</title>
+<link href="styles.3bb2c89f317bbff4d2a4.css" rel="stylesheet"></head>
+<body>
+<header class="header">
+    <div class="navigation">
+        <div class="container">
+            <nav class="menu-navigation header__menu-navigation header__menu-navigation_close" id="menu-navigation">
+                <ul class="information-list header__information-list">
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Компания</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Портфолио</a>
+                    </li>
+                    <li class="information-list__item header__list-item header__list-item_has_right_border">
+                        <a class="information-list__item-link header__list-item-link" href="/">Проектирование</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Ресторанам</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Застройщикам</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Гос.заказчикам</a>
+                    </li>
+                    <li class="information-list__item header__list-item header__list-item_has_right_border">
+                        <a class="information-list__item-link header__list-item-link" href="/">Таблет-питание</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Сервис</a>
+                    </li>
+                    <li class="information-list__item header__list-item">
+                        <a class="information-list__item-link header__list-item-link" href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contacts header__contacts">
+                <a class="link-mail header__link-mail" href="mailto:info@stolovay.ru">
+                    <img class="link-mail-img header__link-mail-img" src="../assets/img/icons/email.png" alt="Почта">
+                    info@stolovay.ru
+                </a>
+                <a class="link-phone header__link-phone" href="tel:+74957907205">
+                    <img class="link-phone-img header__link-phone-img"
+                         src="../assets/img/icons/telephone-handle-silhouette_white.png" alt="Телефон">
+                    8 495 790-72-05
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="common">
+        <div class="container">
+            <div class="common__block">
+                <button class="toggle-menu header__toggle-menu header__toggle-menu_close" id="toggle-menu">
+                    <span class="toggle-menu__bar"></span>
+                    <span class="toggle-menu__bar"></span>
+                    <span class="toggle-menu__bar"></span>
+                </button>
+                <a class="logo-link header__logo-link" href="/">
+                    <img class="logo-img header__logo-img"
+                         src="../assets/img/icons/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.png"
+                         alt="Столовая.РУ">
+                    <span class="logo-text header__logo-text">Столовая.<span
+                            class="header__logo-domain">РУ</span></span>
+                    <span class="header__logo-subtext">Создание пищеблоков</span>
+                </a>
+                <div class="search-filter header__search-filter">
+                    <div class="selection-categories">
+                        <button class="selection-categories__toggle-button" id="selection-categories__toggle-button">
+                            Все
+                        </button>
+                        <div class="selection-categories__popup selection-categories__popup_hidden"
+                             id="selection-categories__popup">
+                            <span class="selection-categories__popup-title">Выберете категорию:</span>
+                            <ul class="selection-categories__list">
+                                <li class="selection-categories__list-item">Все</li>
+                                <li class="selection-categories__list-item">Весовое</li>
+                                <li class="selection-categories__list-item">Для магазинов</li>
+                                <li class="selection-categories__list-item">Для обеденных залов</li>
+                                <li class="selection-categories__list-item">Нейтральное</li>
+                                <li class="selection-categories__list-item">Для бара</li>
+                                <li class="selection-categories__list-item">Для фаст-фуд</li>
+                                <li class="selection-categories__list-item">Посудомоечное</li>
+                                <li class="selection-categories__list-item">Тепловое</li>
+                                <li class="selection-categories__list-item">Термоподносы</li>
+                                <li class="selection-categories__list-item">Хлебопекарное</li>
+                                <li class="selection-categories__list-item">Холодильное</li>
+                                <li class="selection-categories__list-item">Электромеханическое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="search-form header__search-form" id="search-form" action="">
+                        <input class="search-form__input search-form__input_hidden" id="search-form-input" type="text"
+                               placeholder="Поиск">
+                        <button class="search-form__button" id="search-btn">
+                            <img id="search-btn-img" src="../assets/img/icons/search-loop_white.png" alt="Поиск">
+                        </button>
+                    </form>
+                </div>
+                <a class="supplier-portal-link header__supplier-portal-link" href="/">
+                    <img class="supplier-portal-img header__supplier-portal-img"
+                         src="../assets/img/icons/portalpostavschikov.png" alt="Мы на портале поставщиков">
+                    Мы на портале поставщиков
+                </a>
+                <a class="phone header__phone" href="tel:+74957907205">
+                    <img class="header__phone-img" src="../assets/img/icons/telephone-handle-silhouette_green.png"
+                         alt="Телефон">
+                </a>
+                <a class="basket header__basket" href="/">
+                    <span class="basket__count">12</span>
+                    <img class="basket__image" id="basket-image"
+                         src="../assets/img/icons/online-shopping-cart_black.png" alt="Корзина">
+                    <span class="basket__title">Сумма</span>
+                    <span class="basket__sum">150 000 руб.</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="container">
+            <div class="menu-categories header__menu-categories" id="menu-categories">
+                <span class="menu-categories__title header__title-column"
+                      id="toggle-menu-categories">Оборудование</span>
+                <ul class="categories-list header__categories-list" id="categories-list">
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/тепловое.png" alt="">
+                            </div>
+                            Тепловое
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/холодильное.png" alt="">
+                            </div>
+                            Холодильное
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/электромеханическое.png" alt="">
+                            </div>
+                            Электромеханическое
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/посудомоечное.png" alt="">
+                            </div>
+                            Посудомоечное
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/хлебопекарное.png" alt="">
+                            </div>
+                            Хлебопекарное
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/линии раздачи.png" alt="">
+                            </div>
+                            Линии раздачи
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/нейтральное.png" alt="">
+                            </div>
+                            Нейтральное
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/для фаст фуда.png" alt="">
+                            </div>
+                            Для фаст фуда
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/для залов.png" alt="">
+                            </div>
+                            Для залов
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/весовое.png" alt="">
+                            </div>
+                            Вспомогательное
+                        </a>
+                    </li>
+                    <li class="categories-list__item header__categories-item">
+                        <a class="categories-list__item-link header__categories-link" href="/">
+                            <div class="categories-list__item-img header__categories-img">
+                                <img src="../assets/img/equipment/барное.png" alt="">
+                            </div>
+                            Для магазинов
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="home-page-section home-page-main">
+    <div class="container">
+        <div class="target-block home-page-main__target-block">
+            <div class="targeted-offers home-page-main__targeted-offers">
+                <span class="targeted-offers__title home-page-main__targeted-offers-title">Целевые предложения</span>
+                <ul class="targeted-offers__list home-page-main__targeted-offers-list">
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Кафе,
+                            барам, ресторанам</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Дестким
+                            садам и школам</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Таблет-питание</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Для
+                            столовых</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Для
+                            пищеблоков</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Государственным
+                            заказкам</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Для
+                            магазинов</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Для
+                            войсковых частей</a>
+                    </li>
+                    <li class="targeted-offers__list-item home-page-main__targeted-offers-item">
+                        <a class="targeted-offers__list-item-link home-page-main__targeted-offers-link" href="/">Все
+                            предложения</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio home-page-main__portfolio swiper-container" id="portfolio">
+                <div class="portfolio__list swiper-wrapper">
+                    <div class="portfolio__list-item swiper-slide">
+                        <div class="portfolio__slide-info">
+                            <span class="portfolio__slide-running-title">Портфолио</span>
+                            <span class="portfolio__slide-title">НИИ скорой помощи им. Н.В. Склифосовского</span>
+                            <span class="portfolio__slide-subtitle">Оборудование для пищеблоков</span>
+                            <a class="portfolio__slide-link" href="/">Подробнее</a>
+                        </div>
+                        <img class="portfolio__slide-img" src="../assets/img/b93012b339aac95dcb21690b2920b511.png"
+                             alt="">
+                    </div>
+                    <div class="portfolio__list-item swiper-slide">
+                        <div class="portfolio__slide-info">
+                            <span class="portfolio__slide-running-title">Портфолио</span>
+                            <span class="portfolio__slide-title">Комбинат питания МФТИ</span>
+                            <span class="portfolio__slide-subtitle">Проектирование и комплексное снабжение</span>
+                            <a class="portfolio__slide-link" href="/">Подробнее</a>
+                        </div>
+                        <img class="portfolio__slide-img" src="../assets/img/b93012b339aac95dcb21690b2920b511.png"
+                             alt="">
+                    </div>
+                    <div class="portfolio__list-item swiper-slide">
+                        <div class="portfolio__slide-info">
+                            <span class="portfolio__slide-running-title">Портфолио</span>
+                            <span class="portfolio__slide-title">Городская  больница им. Филатова</span>
+                            <span class="portfolio__slide-subtitle">Проектирование предприятий питания</span>
+                            <a class="portfolio__slide-link" href="/">Подробнее</a>
+                        </div>
+                        <img class="portfolio__slide-img" src="../assets/img/b93012b339aac95dcb21690b2920b511.png"
+                             alt="">
+                    </div>
+                    <div class="portfolio__list-item swiper-slide">
+                        <div class="portfolio__slide-info">
+                            <span class="portfolio__slide-running-title">Портфолио</span>
+                            <span class="portfolio__slide-title">Ресторан "Седьмое небо"</span>
+                            <span class="portfolio__slide-subtitle">Проектирование и комплексное снабжение</span>
+                            <a class="portfolio__slide-link" href="/">Подробнее</a>
+                        </div>
+                        <img class="portfolio__slide-img" src="../assets/img/b93012b339aac95dcb21690b2920b511.png"
+                             alt="">
+                    </div>
+                </div>
+                <div class="portfolio__pagination swiper-pagination"></div>
+                <button class="portfolio__button-next swiper-button-next"></button>
+                <button class="portfolio__button-prev swiper-button-prev"></button>
+            </div>
+            <div class="sale home-page-main__sale">
+                <img class="sale__img" src="../assets/img/giftbox.png" alt="Распродажа">
+                <span class="sale__running-title">Самые низкие цены</span>
+                <span class="sale__title">Распродажа</span>
+                <a class="sale__link" href="/">Каталог распродаж</a>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">
+                    <img class="brands__item-img" src="../assets/img/brands/Слой 535.png" alt="">
+                </a>
+            </div>
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">
+                    <img class="brands__item-img" src="../assets/img/brands/Слой 536.png" alt="">
+                </a>
+            </div>
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">
+                    <img class="brands__item-img" src="../assets/img/brands/Слой 537.png" alt="">
+                </a>
+            </div>
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">
+                    <img class="brands__item-img" src="../assets/img/brands/Слой 538.png" alt="">
+                </a>
+            </div>
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">
+                    <img class="brands__item-img" src="../assets/img/brands/Слой 539.png" alt="">
+                </a>
+            </div>
+            <div class="brands__item">
+                <a class="brands__item-link" href="/">Все бренды</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-page-section home-page-news">
+    <div class="container">
+        <div class="title home-page-section__title"><span>Новости производителей</span></div>
+        <div class="home-page-news__block">
+            <div class="home-page-news__item home-page-news__last-news">
+                <a class="home-page-news__item-link-img" href="/">
+                    <img src="../assets/img/news/Слой 541.png" alt="">
+                </a>
+                <div class="home-page-news__item-created">
+                    <span class="home-page-news__item-author">Abat</span>
+                    <span class="home-page-news__item-date">22.06.17</span>
+                </div>
+                <a class="home-page-news__item-link-title" href="/">Новый разборный ротационный пекарский шкаф
+                    РПШ-18-8-6МР</a>
+                <p class="home-page-news__item-text">Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР: в
+                    комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных
+                    форм №7 инжекционный тип парообразования разборная конструкция увеличенное стекло двери. Память на
+                    110 программ (до 4-ех этапов в каждой программе) USB-порт. Таймер до 10 ч Регулировка влажности от 0
+                    до 100%. 5 скоро</p>
+            </div>
+            <div class="home-page-news__item home-page-news__other-news">
+                <a class="home-page-news__item-link-img" href="/">
+                    <img src="../assets/img/news/Слой 549.png" alt="">
+                </a>
+                <div class="home-page-news__item-created">
+                    <span class="home-page-news__item-author">Abat</span>
+                    <span class="home-page-news__item-date">22.06.17</span>
+                </div>
+                <a class="home-page-news__item-link-title" href="/">Повышение энергоэффективности туннельных
+                    посудомоечных машин МПТ торговой марки Abat</a>
+                <p class="home-page-news__item-text">С целью снижения нагрузки на электрическую сеть и для повышения
+                    энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных
+                    машин МПТ торговой марки Abat всех моделей... </p>
+            </div>
+            <div class="home-page-news__item home-page-news__other-news">
+                <a class="home-page-news__item-link-img" href="/">
+                    <img src="../assets/img/news/Слой 548.png" alt="">
+                </a>
+                <div class="home-page-news__item-created">
+                    <span class="home-page-news__item-author">Hicold</span>
+                    <span class="home-page-news__item-date">15.12.2017</span>
+                </div>
+                <a class="home-page-news__item-link-title" href="/">Расширение модельного ряда Hicold</a>
+                <p class="home-page-news__item-text">HICOLD расширяет ассортимент выпускаемого оборудования.</p>
+            </div>
+            <div class="home-page-news__item home-page-news__other-news">
+                <a class="home-page-news__item-link-img" href="/">
+                    <img src="../assets/img/news/Слой 549.png" alt="">
+                </a>
+                <div class="home-page-news__item-created">
+                    <span class="home-page-news__item-author">ATESY</span>
+                    <span class="home-page-news__item-date">10.11.2017</span>
+                </div>
+                <a class="home-page-news__item-link-title" href="/">Новинка: котлы пищеварочные АКПЭ</a>
+                <p class="home-page-news__item-text">АТЕСИ предлагает Вашему вниманию котлы пищеварочные «АКПЭ»-100-2.1
+                    и «АКПЭ»-100-2.1, которые применяются на кухнях общественного питания для приготовления кипятка
+                    больших объемов и следующих блюд: каши, соусы, супы, бульоны, компоты, кисели, вареные овощи.</p>
+            </div>
+            <a class="home-page-news__all-news-link" href="/">Все новости</a>
+        </div>
+    </div>
+</section>
+<section class="home-page-section home-page-recomend">
+    <div class="container">
+        <div class="title title_text_pos_center"><span>Рекомендуем</span></div>
+        <div class="subtitle subtitle_text_pos_center home-page-recomend__subtitle">
+            <span>В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых, ресторанов и кафе ведущих производителей.</span>
+        </div>
+        <div class="equipment">
+            <a class="equipment__item equipment__item_bg_light" href="/">
+                <img class="equipment__item-img" src="../assets/img/equipment/db6c9e8d907355e8d8141ac8eca5597a.png"
+                     alt="">
+                <span class="equipment__item-author equipment__item-author_text_color_dark">Rational</span>
+                <span class="equipment__item-title equipment__item-title_text_color_dark">Пароконвектоматы</span>
+                <p class="equipment__item-description equipment__item-description_text_color_dark">Педантичность и
+                    преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и
+                    долговечность.</p>
+            </a>
+            <a class="equipment__item equipment__item_bg_dark" href="/">
+                <img class="equipment__item-img" src="../assets/img/equipment/7636d779916c7db8a55c4699d143e67c.png"
+                     alt="">
+                <span class="equipment__item-author equipment__item-author_text_color_light">Abat</span>
+                <span class="equipment__item-title equipment__item-title_text_color_light">Тепловое оборудование</span>
+                <p class="equipment__item-description equipment__item-description_text_color_light">Более 55 лет успешно
+                    работает на рынке торгово-технологического оборудования, по праву занимая лидирующее положение в
+                    данном сегменте.</p>
+            </a>
+            <a class="equipment__item equipment__item_bg_light" href="/">
+                <img class="equipment__item-img" src="../assets/img/equipment/fd7f790661c6505dda4c07897374d028.png"
+                     alt="">
+                <span class="equipment__item-author equipment__item-author_text_color_dark">Hicold</span>
+                <span class="equipment__item-title equipment__item-title_text_color_dark">Холодильные столы</span>
+                <p class="equipment__item-description equipment__item-description_text_color_dark">Многофункциональность
+                    оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально
+                    удобной и эффективной.</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="home-page-section home-page-about">
+    <div class="container">
+        <div class="home-page-about__block">
+            <div class="home-page-about__text">
+                <div class="title home-page-section__title home-page-about__title">
+                    <span>Комплексные решения оснащения столовых и кафе</span>
+                </div>
+                <p class="home-page-about__text-paragraph">Компания предлагает комплексное оснащение столовых,
+                    ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания
+                    предприятий общепита и бизнеса HoReCa.</p>
+                <p class="home-page-about__text-paragraph">Иными словами, мы предлагаем проектирование «под ключ» и
+                    постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом
+                    регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для
+                    столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем
+                    производительности в условиях ограниченного бюджета.</p>
+                <span class="home-page-about__accent">Что мы предлагаем</span>
+                <p class="home-page-about__text-paragraph">Разработку технологического проекта кухни и производственной
+                    линии, дизайна ресторанного интерьера;</p>
+                <p class="home-page-about__text-paragraph">составление меню согласно концепции и оснащения бара (кафе,
+                    столовой); подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и
+                    ресторана, большой выбор современных моделей; доставку в любой регион РФ; монтажные и
+                    пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое
+                    оборудование для бара;</p>
+                <button class="home-page-about__show-more-btn">+</button>
+            </div>
+            <div class="home-page-about__business-card">
+                <a class="logo-link home-page-about__logo-link" href="/">
+                    <img class="logo-img home-page-about__logo-img"
+                         src="../assets/img/icons/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.png"
+                         alt="Столовая.РУ">
+                    <span class="logo-text home-page-about__logo-text">Столовая.
+                    <span class="home-page-about__logo-domain">РУ</span>
+                </span>
+                    <span class="home-page-about__logo-subtext">Создание оптимальных пищеблоков</span>
+                </a>
+                <span class="home-page-about__company-group">Группа компаний</span>
+                <span class="home-page-about__indicators">Показатели</span>
+                <span class="home-page-about__indicators-item">На рынке: 5 лет</span>
+                <span class="home-page-about__indicators-item">Объем контрактов: 4 млрд.р.</span>
+                <span class="home-page-about__indicators-item">Количество контрактов: 620</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__block">
+            <nav class="menu-navigation footer__menu-navigation">
+                <span class="menu-navigation__title footer__title-column footer__title-column_close">Информация</span>
+                <ul class="information-list footer__list footer__list_close">
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Компания</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Портфолио</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Проектирование</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Ресторанам</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Застройщикам</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Гос.заказчикам</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Таблет-питание</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Сервис</a>
+                    </li>
+                    <li class="menu-navigation__item footer__item">
+                        <a class="menu-navigation__link footer__link" href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-categories footer__menu-categories">
+                <span class="menu-categories__title footer__title-column footer__title-column_close">Оборудование</span>
+                <ul class="categories-list footer__list footer__list_close">
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/тепловое.png" alt="">
+                            </div>
+                            Тепловое
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/холодильное.png" alt="">
+                            </div>
+                            Холодильное
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/электромеханическое.png" alt="">
+                            </div>
+                            Электромеханическое
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/посудомоечное.png" alt="">
+                            </div>
+                            Посудомоечное
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/хлебопекарное.png" alt="">
+                            </div>
+                            Хлебопекарное
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/линии раздачи.png" alt="">
+                            </div>
+                            Линии раздачи
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/нейтральное.png" alt="">
+                            </div>
+                            Нейтральное
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/для фаст фуда.png" alt="">
+                            </div>
+                            Для фаст фуда
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/для залов.png" alt="">
+                            </div>
+                            Для залов
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/весовое.png" alt="">
+                            </div>
+                            Вспомогательное
+                        </a>
+                    </li>
+                    <li class="categories-list__item footer__item">
+                        <a class="categories-list__item-link footer__link" href="/">
+                            <div class="categories-list__item-img footer__img">
+                                <img src="../assets/img/equipment/барное.png" alt="">
+                            </div>
+                            Для магазинов
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="targeted-offers footer__targeted-offers">
+                <span class="targeted-offers__title footer__title-column footer__title-column_close">Предложения</span>
+                <ul class="targeted-offers__list footer__list footer__list_close">
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Кафе, барам,
+                            ресторанам</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Дестким садам и
+                            школам</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link"
+                           href="/">Таблет-питание</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Для
+                            столовых</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Для
+                            пищеблоков</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Государственным
+                            заказкам</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Для
+                            магазинов</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Для войсковых
+                            частей</a>
+                    </li>
+                    <li class="targeted-offers__list-item footer__item">
+                        <a class="targeted-offers__list-item-link footer__link" href="/">Все
+                            предложения</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts footer__contacts">
+                <span class="targeted-offers__title footer__title-column footer__title-column_close">Контакты</span>
+                <div class="footer__phones footer__list_close">
+                    <a class="link-phone footer__link-phone" href="tel:+74951503171">8 495 150-31-71</a>
+                    <a class="link-phone footer__link-phone" href="tel:+78005004344">8 800 500 43 44</a>
+                    <span class="footer__phone-title">звонок беспланый</span>
+                </div>
+                <div class="footer__opening-hours footer__list_close">
+                    <span class="footer__opening-hours-days">Пн-Пт</span>
+                    <span class="footer__opening-hours-time">09:00 до 18:00</span>
+                </div>
+                <div class="footer__mails footer__list_close">
+                    <a class="link-mail footer__link-mail" href="mailto:com@stolovay.ru">com@stolovay.ru</a>
+                    <a class="link-mail footer__link-mail" href="mailto:info@stolovay.ru">info@stolovay.ru</a>
+                </div>
+                <span class="footer__address footer__list_close">111524, Москва, Рязанский проспект 24к2</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-block">
+                <a class="logo-link footer__logo-link" href="/">
+                    <img class="logo-img footer__logo-img"
+                         src="../assets/img/icons/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant.png"
+                         alt="Столовая.РУ">
+                    <span class="logo-text footer__logo-text">Столовая.<span class="footer__logo-domain">РУ</span></span>
+                    <span class="footer__logo-subtext">Создание оптимальных пищеблоков</span>
+                </a>
+                <span class="footer__developer">Сайт разработан NTI-systems</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,51 @@
+.brands__item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 1152px) {
+    padding-bottom: 13px;
+    &:not(:last-child) {
+      border-right: 2px solid #efeeee;
+    }
+  }
+
+  @media (min-width: 896px) {
+    padding-top: 17px;
+  }
+
+  @media (max-width: 1151px) and (min-width: 896px) {
+    padding-bottom: 17px;
+
+    &:not(:nth-child(3n+3)) {
+      position: relative;
+    }
+
+    &:not(:nth-last-child(-n+3)) {
+      border-bottom: 2px solid #efeeee;
+    }
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &:not(:nth-last-child(-n+2)) {
+      border-bottom: 2px solid #efeeee;
+    }
+  }
+
+  @media (max-width: 895px) {
+    &:not(:nth-child(2n+2)) {
+      position: relative;
+    }
+  }
+
+  @media (max-width: 749px) {
+    padding: 10px;
+
+    &:not(:nth-last-child(-n+2)) {
+      border-bottom: 1px solid #efeeee;
+    }
+  }
+}

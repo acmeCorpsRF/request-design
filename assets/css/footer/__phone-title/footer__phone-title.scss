@@ -1,0 +1,10 @@
+.footer__phone-title {
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #ffffff;
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    display: inline-block;
+  }
+}

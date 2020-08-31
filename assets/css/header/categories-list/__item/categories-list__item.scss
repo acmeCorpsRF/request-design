@@ -1,0 +1,14 @@
+.categories-list__item {
+  display: block;
+
+  @media (max-width: 1549px) and (min-width: 1280px) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .menu-categories:not([class*="swiper-container-initialized"]) & {
+      flex: 1;
+    }
+  }
+}

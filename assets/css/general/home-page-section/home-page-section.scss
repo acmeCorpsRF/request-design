@@ -1,0 +1,23 @@
+@import '__title/home-page-section__title.scss';
+
+.home-page-section {
+  @media (min-width: 1280px) {
+    padding-bottom: 144px;
+  }
+
+  @media (min-width: 896px) {
+    padding-top: 21px;
+  }
+
+  @media (max-width: 1279px) and (min-width: 896px) {
+    padding-bottom: 44px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    padding-bottom: 136px;
+  }
+
+  @media (max-width: 749px) {
+    padding-bottom: 30px;
+  }
+}

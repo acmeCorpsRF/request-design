@@ -1,0 +1,8 @@
+@import 'portfolio/portfolio.scss';
+@import 'sale/sale.scss';
+
+.target-block {
+  @media (min-width: 896px) {
+    display: flex;
+  }
+}

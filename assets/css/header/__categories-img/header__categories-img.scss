@@ -1,0 +1,13 @@
+.header__categories-img {
+  width: 57px;
+  height: 57px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media (max-width: 895px) {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.home-page-news__all-news-link {
+  display: inline-block;
+  padding: 6px 39px;
+  font: {
+    family: 'Myriad Pro LightSemiExt', sans-serif;
+  }
+  color: #121212;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #282828;
+  border-radius: 20px;
+
+  &:hover {
+    color: #00aa4b;
+    border-color: #00aa4b;
+  }
+}

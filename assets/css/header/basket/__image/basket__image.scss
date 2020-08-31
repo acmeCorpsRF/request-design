@@ -1,0 +1,12 @@
+.basket__image {
+  @media (min-width: 896px) {
+    float: left;
+    width: 28px;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    width: 59px;
+    margin-top: 10px;
+  }
+}

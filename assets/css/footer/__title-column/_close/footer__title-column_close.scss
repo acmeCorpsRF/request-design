@@ -1,0 +1,7 @@
+.footer__title-column_close {
+  @media (max-width: 895px) {
+    &::after {
+      content: '+';
+    }
+  }
+}

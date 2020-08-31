@@ -1,0 +1,17 @@
+@import '__block/home-page-news__block.scss';
+@import '__item/home-page-news__item.scss';
+@import '__item-link-img/home-page-news__item-link-img.scss';
+@import '__item-created/home-page-news__item-created.scss';
+@import '__item-author/home-page-news__item-author.scss';
+@import '__item-date/home-page-news__item-date.scss';
+@import '__item-link-title/home-page-news__item-link-title.scss';
+@import '__item-text/home-page-news__item-text.scss';
+@import '__last-news/home-page-news__last-news';
+@import '__other-news/home-page-news__other-news.scss';
+@import '__all-news-link/home-page-news__all-news-link.scss';
+
+.home-page-news {
+  @media (max-width: 895px) {
+    display: none;
+  }
+}

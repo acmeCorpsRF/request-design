@@ -1,0 +1,23 @@
+.home-page-news__item-link-img {
+  @media (max-width: 1279px) and (min-width: 768px) {
+    display: block;
+    max-width: 190px;
+    max-height: 115px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  &:hover {
+    & ~ .home-page-news__item-link-title {
+      color: #00aa4b;
+    }
+  }
+
+  .home-page-news__other-news & {
+    @media (min-width: 1280px) {
+      float: left;
+      max-width: 190px;
+      margin-top: 3px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.portfolio__slide-running-title {
+  display: inline-block;
+  font: {
+    family: 'Myriad Pro LightSemiExt';
+  }
+  color: #777777;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: 1279px) and (min-width: 896px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 895px) and (min-width: 750px) {
+    margin-bottom: 44px;
+    font: {
+      size: 25px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 10px;
+  }
+}
