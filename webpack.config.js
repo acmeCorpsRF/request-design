@@ -46,7 +46,7 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: 'assets/fonts/[name].[ext]'
+                        name: '[path][name].[ext]'
                     }
                 }
             },
@@ -55,7 +55,7 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: 'assets/img/[name].[ext]'
+                        name: '[path][name].[ext]'
                     }
                 }
             }
@@ -92,10 +92,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'styles.[contenthash].css'
         }),
-        new CopyWebpackPlugin([
-            {from: 'assets/img', to: path.resolve(__dirname, 'app', 'assets/img')},
-            {from: 'assets/fonts', to: path.resolve(__dirname, 'app', 'assets/fonts')}
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                {from: 'assets/img', to: path.resolve(__dirname, 'app', 'assets/img/')},
+                {from: 'assets/fonts', to: path.resolve(__dirname, 'app', 'assets/fonts/')}
+            ]
+        })
     ],
     devtool: 'cheap-inline-module-source-map'
 
